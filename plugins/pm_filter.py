@@ -30,7 +30,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("📥 Join Movie Channel 📥", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -272,11 +272,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/DKBOTZ'),
-                    InlineKeyboardButton('OWNER', url='https://t.me/DKBOTZ')
+                    InlineKeyboardButton('Movie Channel', url='https://t.me/Movie_Arcade'),
+                    InlineKeyboardButton('OWNER', url='https://t.me/Jinn_007')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/DKBOTZ'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/DKBOTZHELP'>Click here</a>\nUpdate Channel : <a href='https://t.me/DKBOTZ'>DK BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/Jinn_007'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/DKBOTZHELP'>Click here</a>\nUpdate Channel : <a href='https://t.me/DKBOTZ'>DK BOTZ</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -297,8 +297,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/DKBOTZ'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/DKBOTZ')
+                        InlineKeyboardButton('More Movies', url='https://t.me/MovieArcade'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/Movie_Arcade')
                     ]
                     ]
                 
@@ -329,8 +329,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/DKBOTZ'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/DKBOTZ')
+                        InlineKeyboardButton('More Movies', url='https://t.me/MovieArcade'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/Movie_Arcade')
                     ]
                     ]
                 

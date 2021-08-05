@@ -31,7 +31,7 @@ async def start(bot, cmd):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("📥 Join Movie Group 📥", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('Series', url='https://t.me/onlyseries76')
+                        InlineKeyboardButton('Series', url='https://t.me/series_collection_arcade')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -86,7 +86,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("📥 Join Movie Channel 📥", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Series Channel', url='https://t.me/onlyseries76'),
-            InlineKeyboardButton('OWNER', url='https://t.me/Jackbro007')
+            InlineKeyboardButton('Series Channel', url='https://t.me/series_collection_arcade'),
+            InlineKeyboardButton('OWNER', url='https://t.me/Jinn_007')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/Jackbro007'>JACK</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/Jackbro007'>Click here</a>\nMovie Channel : <a href='https://t.me/onlymovie76'>New Released movie</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/Jinn_007'>JACK</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nOWNER : <a href='https://t.me/Jackbro007'>Click here</a>\nMovie Channel : <a href='https://t.me/onlymovie76'>New Released movie</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
